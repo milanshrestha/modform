@@ -49,7 +49,7 @@
 	<div class="col">
 		<div class="row">
 			<div class="col text-center">
-			<h4>Guests Feedback Form</h4>
+				<span class="h4"><p>Guests Feedback Form</p></span>
 			</div>
 		</div>	
 		<div class="row">
@@ -57,47 +57,49 @@
 		<form action="connect.php" method="post">
       
         <div class="form-group form-row">
-          <div class="form-group col-md-6">
-            <label for="checkin-date exampleFormControlInput1">Checked-in Date</label>
+          <div class="col-md-6">
+            <label for="checkin-date exampleFormControlInput1" class="form-label">Checked-In Date:</label>
             <input type="date" id="checkin-date" name="checkin-date" class="form-control form-control-sm" required />
           </div>
-          <div class="form-group col-md-6">
-            <label for="room-number exampleFormControlInput2">Room Number</label>
+          <div class="col-md-6">
+            <label for="room-number exampleFormControlInput2" class="form-label">Room No:</label>
             <input type="text" id="room-number" name="room-number" class="form-control form-control-sm" required />
           </div>
         </div>
         <div class="form-group form-row">
-          <div class="form-group col-md-6">
-            <label for="name exampleFormControlInput3">Your Name</label>
+          <div class="col-md-6">
+            <label for="name exampleFormControlInput3" class="form-label">Full Name:</label>
             <input type="text" id="name" name="name" class="form-control form-control-sm" required />
           </div>
-          <div class="form-group col-md-6">
-            <label for="email exampleFormControlInput4">Your Email Address</label>
+          <div class="col-md-6">
+            <label for="email exampleFormControlInput4" class="form-label">Email:</label>
             <input type="email" id="email" name="email" class="form-control form-control-sm" required />
           </div>
         </div>
         <div class="form-group form-row">
-          <label for="info-clearness exampleFormControlInput5">How clear was the information that our guest relation officer provided to
-            you?</label>
-          <select id="info-clearness" name="info-clearness" class="form-control form-control-sm" required>
-            <option value="very-clear">Very Clear</option>
+          <label for="info-clearness exampleFormControlInput5" class="form-label">How clear were the details our guest relations officer gave you?</label>
+          <select id="info-clearness" name="info-clearness" class="form-control form-select form-control-sm" required>
+            <option value="" selected>Choose...</option>
+			<option value="very-clear">Very Clear</option>
             <option value="clear">Clear</option>
             <option value="neutral">Neutral</option>
           </select>
         </div>
         <div class="form-group form-row">
-          <div class="form-group col-md-6">
-            <label for="recommendation exampleFormControlInput6">How likely would you recommend this hotel</label>
-            <select id="recommendation" name="recommendation" class="form-control form-control-sm" required>
+          <div class="col-md-6">
+            <label for="recommendation exampleFormControlInput6" class="form-label">How likely would you recommend this hotel?</label>
+            <select id="recommendation" name="recommendation" class="form-control form-select form-control-sm" required>
+			<option value="" selected>Choose...</option>
               <option value="very-likely">Very Likely</option>
               <option value="likely">Likely</option>
               <option value="neutral">Neutral</option>
             </select>
           </div>
 
-          <div class="form-group col-md-6">
-            <label for="room-quality exampleFormControlInput7">Rate the quality of the rooms</label>
-            <select id="room-quality" name="room-quality" class="form-control form-control-sm" required>
+          <div class="col-md-6">
+            <label for="room-quality exampleFormControlInput7" class="form-label">Rate the quality of the rooms</label>
+            <select id="room-quality" name="room-quality" class="form-control form-select form-control-sm" required>
+			<option value="" selected>Choose...</option>
               <option value="excellent">Excellent</option>
               <option value="good">Good</option>
               <option value="fair">Fair</option>
@@ -105,17 +107,19 @@
           </div>
         </div>
         <div class="form-group form-row">
-          <div class="form-group col-md-6">
-            <label for="service-quality exampleFormControlInput8">Rate the quality of the Service</label>
-            <select id="service-quality" name="service-quality" class="form-control form-control-sm" required>
+          <div class="col-md-6">
+            <label for="service-quality exampleFormControlInput8" class="form-label">Rate the quality of the Service?</label>
+            <select id="service-quality" name="service-quality" class="form-control form-select form-control-sm" required>
+			<option value="" selected>Choose...</option>
               <option value="excellent">Excellent</option>
               <option value="good">Good</option>
               <option value="fair">Fair</option>
             </select>
           </div>
-          <div class="form-group col-md-6">
-            <label for="location-quality exampleFormControlInput9">How was the location</label>
-            <select id="location-quality" name="location-quality" class="form-control form-control-sm" required>
+          <div class="col-md-6">
+            <label for="location-quality exampleFormControlInput9" class="form-label">How was the location?</label>
+            <select id="location-quality" name="location-quality" class="form-control form-select form-control-sm" required>
+			<option value="" selected>Choose...</option>
               <option value="excellent">Excellent</option>
               <option value="good">Good</option>
               <option value="fair">Fair</option>
@@ -123,13 +127,14 @@
           </div>
         </div>
 
-        <div class="form-group form-row">
-          <label for="comments exampleFormControlInput10">Have any other comments, questions, or concerns:</label>
+        <div class="form-group form-floating form-row">
+          <label for="comments exampleFormControlInput10" class="form-label">Have any other comments, questions, or concerns:</label>
           <textarea id="comments" name="comments" class="form-control form-text" required></textarea>
         </div>
+		
 		<div class="form-group form-row">
 			<div class="mb-2">
-			  <input type="submit" value="Submit" class="btn btn-primary" />
+			  <input type="submit" value="Submit" class="btn btn-primary btn-lg" />
 			</div>
 		</div>
     </form>
@@ -141,20 +146,17 @@
 </div>   <!-- From Row Closed-->
 </section>
 <section class="footer">
-<div class="container ms-bottom-container">
-    <div class="row">
-      <div class="col">
-	  <footer>
-        <div class="footer text-center mt-4">
-          <p>
-            <b>Designed By:</b>
-            <a href="https://www.sait.com.np/" target="_blank"><strong>SA IT Solutions</strong></a>
-          </p>
-		  </div>
-		  </footer>
-        </div>
-      </div>
-      </div>
+	<div class="container ms-bottom-container">
+		<div class="row">
+		  <div class="col">
+			   <div class="text-center mt-4">
+				  <p>
+					<span>Designed By:</span> <a href="https://www.sait.com.np/" target="_blank"><strong>SA IT Solutions</strong></a>
+				  </p>
+			  </div>
+			</div>
+		</div>
+	</div>
 	  </div>
 </section>
 </body>
