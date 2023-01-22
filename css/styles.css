@@ -25,9 +25,11 @@ body {
   .container {
     max-width: 100%;
   }
+/* Resize the logo image in mobile view */  
   .img-fluid {
     max-width: 25%;    
 }
+/* Align Logo Image to center of the content in mobile view */
 img {
   display: block;
   margin-left: auto;
