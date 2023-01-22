@@ -8,15 +8,17 @@
   <title>Feedback Form</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <!-- <link rel="stylesheet" href="style.css" /> -->
+	<link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
-  <div class="container mt-2">
-    
-    <div class="col mb-4">
+<section class="header">
+<div class="container ms-top-header">
+    <div class="row">
+	<div class="col">
       <div class="row">
-          <div class="col-sm-4 col-md-2 order-md-1">
+
+          <div class="col-sm-4 order-md-1">
             <img src="images/fishtaillogo.png" class="img-fluid" alt="Responsive image">
           </div>
           <div class="col-sm-8 col-md-8 order-md-2">
@@ -27,51 +29,59 @@
               to serve you better.</p>
             <p>We thank you for the kind help.</p>
           </div>
-    
+   
         </div>
       </div>
-    
+	  </div>
+</div>
+</section> 
+
+<section class="form"> 
+<div class="container ms-middle-container">
 <div class="row">
-<div class="col">
-   
-    <div class="form-row mb-4">
-      <h2>Guests Feedback Form</h2>
-    </div>
-    <form action="connect.php" method="post">
+	<div class="col">
+		<div class="row">
+			<div class="col text-center">
+			<h2>Guests Feedback Form</h2>
+			</div>
+		</div>	
+		<div class="row">
+		<div class="col form-container">
+		<form action="connect.php" method="post">
       
-        <div class="form-row">
+        <div class="form-group form-row">
           <div class="form-group col-md-6">
-            <label for="checkin-date">Checked-in Date</label>
-            <input type="date" id="checkin-date" name="checkin-date" class="form-control" required />
+            <label for="checkin-date exampleFormControlInput1">Checked-in Date</label>
+            <input type="date" id="checkin-date" name="checkin-date" class="form-control form-control-sm" required />
           </div>
           <div class="form-group col-md-6">
-            <label for="room-number">Room Number</label>
-            <input type="text" id="room-number" name="room-number" class="form-control" required />
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" class="form-control" required />
-          </div>
-          <div class="form-group col-md-6">
-            <label for="email">Your Email Address</label>
-            <input type="email" id="email" name="email" class="form-control" required />
+            <label for="room-number exampleFormControlInput2">Room Number</label>
+            <input type="text" id="room-number" name="room-number" class="form-control form-control-sm" required />
           </div>
         </div>
-        <div class="form-group">
-          <label for="info-clearness">How clear was the information that our guest relation officer provided to
+        <div class="form-group form-row">
+          <div class="form-group col-md-6">
+            <label for="name exampleFormControlInput3">Your Name</label>
+            <input type="text" id="name" name="name" class="form-control form-control-sm" required />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="email exampleFormControlInput4">Your Email Address</label>
+            <input type="email" id="email" name="email" class="form-control form-control-sm" required />
+          </div>
+        </div>
+        <div class="form-group form-row">
+          <label for="info-clearness exampleFormControlInput5">How clear was the information that our guest relation officer provided to
             you?</label>
-          <select id="info-clearness" name="info-clearness" class="form-control" required>
+          <select id="info-clearness" name="info-clearness" class="form-control form-control-sm" required>
             <option value="very-clear">Very Clear</option>
             <option value="clear">Clear</option>
             <option value="neutral">Neutral</option>
           </select>
         </div>
-        <div class="form-row">
+        <div class="form-group form-row">
           <div class="form-group col-md-6">
-            <label for="recommendation">How likely would you recommend this hotel</label>
-            <select id="recommendation" name="recommendation" class="form-control" required>
+            <label for="recommendation exampleFormControlInput6">How likely would you recommend this hotel</label>
+            <select id="recommendation" name="recommendation" class="form-control form-control-sm" required>
               <option value="very-likely">Very Likely</option>
               <option value="likely">Likely</option>
               <option value="neutral">Neutral</option>
@@ -79,57 +89,68 @@
           </div>
 
           <div class="form-group col-md-6">
-            <label for="room-quality">Rate the quality of the rooms</label>
-            <select id="room-quality" name="room-quality" class="form-control" required>
+            <label for="room-quality exampleFormControlInput7">Rate the quality of the rooms</label>
+            <select id="room-quality" name="room-quality" class="form-control form-control-sm" required>
               <option value="excellent">Excellent</option>
               <option value="good">Good</option>
               <option value="fair">Fair</option>
             </select>
           </div>
         </div>
-        <div class="form-row">
+        <div class="form-group form-row">
           <div class="form-group col-md-6">
-            <label for="service-quality">Rate the quality of the Service</label>
-            <select id="service-quality" name="service-quality" class="form-control" required>
+            <label for="service-quality exampleFormControlInput8">Rate the quality of the Service</label>
+            <select id="service-quality" name="service-quality" class="form-control form-control-sm" required>
               <option value="excellent">Excellent</option>
               <option value="good">Good</option>
               <option value="fair">Fair</option>
             </select>
           </div>
           <div class="form-group col-md-6">
-            <label for="location-quality">How was the location</label>
-            <select id="location-quality" name="location-quality" class="form-control" required>
+            <label for="location-quality exampleFormControlInput9">How was the location</label>
+            <select id="location-quality" name="location-quality" class="form-control form-control-sm" required>
               <option value="excellent">Excellent</option>
               <option value="good">Good</option>
               <option value="fair">Fair</option>
             </select>
           </div>
-
         </div>
 
-        <div class="form-group">
-          <label for="comments">Have any other comments, questions, or concerns:</label>
-          <textarea id="comments" name="comments" class="form-control form-control-lg" required></textarea>
+        <div class="form-group form-row">
+          <label for="comments exampleFormControlInput10">Have any other comments, questions, or concerns:</label>
+          <textarea id="comments" name="comments" class="form-control form-text" required></textarea>
         </div>
-
-        <div class="text-center mb-2">
-          <input type="submit" value="Submit" class="btn btn-primary" />
-        </div>
-      
+		<div class="form-group form-row">
+			<div class="mb-2">
+			  <input type="submit" value="Submit" class="btn btn-primary" />
+			</div>
+		</div>
     </form>
-  </div>
-</div>    <!-- From Row Closed-->
+		
+		</div>
+		</div>
+	</div>
+	</div>
+</div>   <!-- From Row Closed-->
+</div>
+</section>
+<section class="footer">
+<div class="container">
     <div class="row">
       <div class="col">
+	  <footer>
         <div class="footer text-center mt-4">
           <p>
             Designed By:
             <a href="https://sait.com.np/" target="_blank"><strong>SA IT Solutions</strong></a>
           </p>
+		  </div>
+		  </footer>
         </div>
       </div>
       </div>
-  </div> <!-- Containter Closed -->
+	  </div>
+</section>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </html>

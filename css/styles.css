@@ -1,0 +1,15 @@
+body {
+  background-image: url("../images/bg-img1.jpg");
+  background-size: cover;
+}
+.ms-top-header, .ms-middle-container {
+	padding:25px;
+}
+.container {
+    max-width: 768px;
+}
+@media screen and (max-width: 600px) {
+  .container {
+    max-width: 100%;
+  }
+}
