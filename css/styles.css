@@ -4,6 +4,7 @@ body {
 }
 .ms-top-header, .ms-middle-container {
 	padding:25px;
+	background:white;
 }
 .container {
     max-width: 768px;
